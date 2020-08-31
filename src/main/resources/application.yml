@@ -11,7 +11,7 @@ spring:
         - id: booking
           uri: http://localhost:8081
           predicates:
-            - Path=/bookings/** /bookingLists/**
+            - Path=/bookings/**,/bookingLists/**
         - id: confirm
           uri: http://localhost:8082
           predicates:
