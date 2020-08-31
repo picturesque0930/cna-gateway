@@ -42,7 +42,7 @@ spring:
         - id: booking
           uri: http://booking:8080
           predicates:
-            - Path=/bookings/** /bookingLists/**
+            - Path=/bookings/**,/bookingLists/**
         - id: confirm
           uri: http://confirm:8080
           predicates:
