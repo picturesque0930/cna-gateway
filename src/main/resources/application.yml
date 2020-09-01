@@ -58,7 +58,7 @@ spring:
         - id: bookinglist
           uri: http://bookinglist:8080
           predicates:
-            - Path=/boolinglists/**
+            - Path=/bookinglists/**
       globalcors:
         corsConfigurations:
           '[/**]':
