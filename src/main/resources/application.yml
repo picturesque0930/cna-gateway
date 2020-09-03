@@ -21,9 +21,14 @@ spring:
           predicates:
             - Path=/notifications/** 
         - id: bookinglist
-          uri: http://localhost:8088
+          uri: http://localhost:8085
           predicates:
-            - Path=/bookingLists/**
+            - Path=/bookingLists/**  
+        - id: room
+          uri: http://localhost:8086
+          predicates:
+            - Path=/rooms/**  
+
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -59,6 +64,11 @@ spring:
           uri: http://bookingList:8080
           predicates:
             - Path=/bookingLists/**
+        - id: room
+          uri: http://room:8080
+          predicates:
+            - Path=/rooms/**     
+
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -69,6 +79,6 @@ spring:
             allowedHeaders:
               - "*"
             allowCredentials: true
-
+ 
 server:
   port: 8080
